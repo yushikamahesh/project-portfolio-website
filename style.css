@@ -1,58 +1,65 @@
+
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
+ 
 html {
   scroll-behavior: smooth;
 }
-
+ 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+ 
+/* NAVBAR */
+ 
 .topnav a {
   text-decoration: none;
   color: white;
 }
-
+ 
 .navbar {
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%; 
   height: 5vh;
   margin-top: 20px;
 }
-
+ 
 nav ul {
   display: flex;
   justify-content: center;
-  list-style-type: none;
+  list-style: none;
 }
-
+ 
 nav li {
   margin: 0 25px;
 }
-.hero {
+ 
+
+ 
+.homeSection {
   background-image: url("images/homepage.png");
   background-size: cover;
-  background-position: center;
   min-height: 100vh;
-
+ 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+ 
   text-align: center;
   color: white;
 }
-
+ 
 .hero a {
   color: black;
 }
-
+ 
 .button {
   display: inline-block;
   padding: 12px 24px;
@@ -60,176 +67,176 @@ nav li {
   text-decoration: none;
   border-radius: 8px;
   margin-top: 100px;
-  align-items: center;
 }
-
+ 
+/* OVER MIJ */
+ 
 .overmijSection {
+  background-image: url("images/homepagina achtergrond.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+ 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  color: white;
 }
-.hz {
-}
-
-.Opldng {
-  width: 70vw;
-  display: flex;
-  flex-direction: column;
-  margin-top: 25px;
-  margin-bottom: 10px;
-}
-
-.Schl {
-  width: 70vw;
-  display: flex;
-  flex-direction: column;
-}
-
-.Wrk {
-  display: flex;
-  justify-content: center;
-}
-
-.wbi {
-  margin-bottom: 25px;
-}
-
-.wiebenik {
-  width: 70vw;
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-}
-
+ 
+.hz,
+.Opldng,
+.Schl,
+.wiebenik,
 .opleidingen {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 70vw;
+  max-width: 1200px;
+  margin: 25px auto;
+  margin-left: 235px;
+
 }
+ 
+.wbi {
+  margin-bottom: 20px;
+  margin-left: 235px;
+}
+ 
+/* WERK */
+ 
 .werk {
   width: 70vw;
+  max-width: 1200px;
+  margin: 130px auto 0;
+ 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-top: 25px;
+ 
+  background: rgba(0, 0, 15, 0.85);
+  border: 2px solid #00aaff;
+  border-radius: 15px;
+ 
+  box-shadow:
+    0 0 15px #0088ff,
+    0 0 30px rgba(150, 0, 255, 0.4);
 }
-
+ 
+.Wrk {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+ 
+.Wrk th {
+  color: #00ccff;
+  text-shadow: 0 0 10px #00aaff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+ 
+.Wrk th,
+.Wrk td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #6633ff;
+}
+ 
+.Wrk tbody tr:hover {
+  background: rgba(100, 0, 255, 0.2);
+}
+ 
+.Wrk tbody tr:last-child td {
+  border-bottom: none;
+}
+ 
+/* INTERVIEW */
+ 
+.interviewSection {
+  background-image: url("images/Neon Cyberpunk Lounge Studio-2.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  text-align: center;
+  color: white;
+}
+ 
 .Interview {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
-
+ 
 .Intrvw {
   width: 70vw;
+  max-width: 1200px;
+  margin: 180px auto 10px;
+}
+ 
+.vraag0,
+.Antwrd0,
+.vraag1,
+.Antwrd1,
+.vraag2,
+.Antwrd2,
+.vraag3,
+.Antwrd3,
+.vraag4,
+.Antwrd4 {
+  width: 70vw;
+  max-width: 1200px;
+ 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 180px;
-  margin-bottom: 10px;
-  margin-left: 40vw;
+ 
+  margin: 10px auto 40px;
 }
 
-.vraag0{
-width: 70vw;
-display: flex;
-flex-direction: column;
- justify-content: center;
-margin-left: 35vw;
- margin-bottom: 40px;
- margin-top: 10px;
+.projectenSection{
+  background-image: url("images/Neon Holographic Sci-Fi Gallery-3.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  text-align: center;
+  color: white;
 }
 
-.Antwrd0{
-width: 70vw;
-display: flex;
-flex-direction: column;
- justify-content: center;
-margin-left: 35vw;
- margin-bottom: 40px;
- margin-top: 10px;
+.socialsSection{
+  background-image: url("images/socials.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  text-align: center;
+  color: white;
 }
 
-.vraag1{
-width: 70vw;
-display: flex;
-flex-direction: column;
- justify-content: center;
-margin-left: 35vw;
- margin-bottom: 40px;
- margin-top: 10px; 
+.socialsSection img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+   
 }
 
-.Antwrd1{
-width: 70vw;
-display: flex;
-flex-direction: column;
- justify-content: center;
-margin-left: 35vw;
- margin-bottom: 40px;
- margin-top: 10px;
+.linkedin{
+  margin-top: 10px;
+   align-content: space-between;
 }
 
-.vraag2{
-width: 70vw;
-display: flex;
-flex-direction: column;
- justify-content: center;
-margin-left: 35vw;
- margin-bottom: 40px;
- margin-top: 10px;
-}
-
-.Antwrd2{
-width: 70vw;
-display: flex;
-flex-direction: column;
- justify-content: center;
-margin-left: 35vw;
- margin-bottom: 40px;
- margin-top: 10px; 
-}
-
-.vraag3{
-width: 70vw;
-display: flex;
-flex-direction: column;
- justify-content: center;
-margin-left: 35vw;
- margin-bottom: 40px;
- margin-top: 10px;
-}
-
-.Antwrd3{
-width: 70vw;
-display: flex;
-flex-direction: column;
- justify-content: center;
-margin-left: 35vw;
- margin-bottom: 40px;
- margin-top: 10px; 
-}
-
-.vraag4{
-width: 70vw;
-display: flex;
-flex-direction: column;
- justify-content: center;
-margin-left: 35vw;
- margin-bottom: 40px;
- margin-top: 10px;
-}
-
-.Antwrd4{
-width: 70vw;
-display: flex;
-flex-direction: column;
- justify-content: center;
-margin-left: 35vw;
- margin-bottom: 40px;
- margin-top: 10px;
+.github{
+  margin-top: 150px;
+  margin-left: 660px;
 }
