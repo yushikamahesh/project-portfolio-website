@@ -196,47 +196,58 @@ nav li {
   margin: 10px auto 40px;
 }
 
-.projectenSection{
-  background-image: url("images/Neon Holographic Sci-Fi Gallery-3.png");
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
- 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- 
-  text-align: center;
-  color: white;
+.socialsSection {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
 }
 
-.socialsSection{
-  background-image: url("images/socials.png");
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
- 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- 
-  text-align: center;
-  color: white;
+
+.socialsBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    z-index: -1;
 }
 
-.socialsSection img {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-   
+
+.socialsBox {
+    position: absolute;
+
+    top: 35%;
+    left: 0;
+
+    width: 100%;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
 }
 
-.linkedin{
-  margin-top: 10px;
-   align-content: space-between;
+
+.linkedinBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.github{
-  margin-top: 150px;
-  margin-left: 660px;
+.linkedinBox img,
+.githubBox{
+    width: 170px;
+    height: auto;
 }
+
+
+.githubBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
