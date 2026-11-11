@@ -1,65 +1,67 @@
-
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
- 
+
 html {
   scroll-behavior: smooth;
 }
- 
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
- 
-/* NAVBAR */
- 
+
+
 .topnav a {
   text-decoration: none;
   color: white;
 }
- 
+
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%; 
-  height: 5vh;
-  margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    padding: 20px 0;
+    z-index: 1000;
 }
- 
+
 nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
- 
+
 nav li {
   margin: 0 25px;
 }
- 
 
- 
 .homeSection {
   background-image: url("images/homepage.png");
   background-size: cover;
   min-height: 100vh;
- 
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
+
   text-align: center;
   color: white;
 }
- 
+
 .hero a {
   color: black;
 }
- 
+
 .button {
   display: inline-block;
   padding: 12px 24px;
@@ -68,114 +70,128 @@ nav li {
   border-radius: 8px;
   margin-top: 100px;
 }
- 
+
 /* OVER MIJ */
- 
+
 .overmijSection {
   background-image: url("images/homepagina achtergrond.png");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
- 
+
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
 }
- 
+
+ .profielBox img{
+  display: flex;
+  border-radius: 50%;
+  padding: 5px;
+  width: 200px;
+  height: auto;
+  margin-right: 100vh;
+  margin-top: 20vh;
+}
+
 .hz,
-.Opldng,
 .Schl,
 .wiebenik,
 .opleidingen {
   width: 70vw;
   max-width: 1200px;
   margin: 25px auto;
-  margin-left: 235px;
+  margin-left: 175px;
+  margin-top: 20px;
 
+  
 }
- 
-.wbi {
-  margin-bottom: 20px;
-  margin-left: 235px;
+.Opldng{
+  margin-top: 20px;
+  margin-left: 175px;
 }
- 
+.wbi{
+  margin-top: -230px;
+  margin-left: 175px;
+}
+
+
 /* WERK */
- 
+
 .werk {
   width: 70vw;
   max-width: 1200px;
   margin: 130px auto 0;
- 
+  margin-left: 200px;
+
   display: flex;
   flex-direction: column;
- 
+
   background: rgba(0, 0, 15, 0.85);
   border: 2px solid #00aaff;
   border-radius: 15px;
- 
+
   box-shadow:
     0 0 15px #0088ff,
     0 0 30px rgba(150, 0, 255, 0.4);
 }
- 
+
 .Wrk {
   width: 100%;
   border-collapse: collapse;
   color: white;
   font-family: Arial, sans-serif;
 }
- 
+
 .Wrk th {
   color: #00ccff;
   text-shadow: 0 0 10px #00aaff;
   font-size: 18px;
   text-transform: uppercase;
 }
- 
+
 .Wrk th,
 .Wrk td {
   padding: 15px;
   text-align: left;
   border-bottom: 1px solid #6633ff;
 }
- 
+
 .Wrk tbody tr:hover {
   background: rgba(100, 0, 255, 0.2);
 }
- 
+
 .Wrk tbody tr:last-child td {
   border-bottom: none;
 }
- 
-/* INTERVIEW */
- 
+
 .interviewSection {
   background-image: url("images/Neon Cyberpunk Lounge Studio-2.png");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
- 
+
   display: flex;
   flex-direction: column;
   align-items: center;
- 
+
   text-align: center;
   color: white;
 }
- 
+
 .Interview {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
- 
+
 .Intrvw {
   width: 70vw;
   max-width: 1200px;
   margin: 180px auto 10px;
 }
- 
+
 .vraag0,
 .Antwrd0,
 .vraag1,
@@ -188,66 +204,149 @@ nav li {
 .Antwrd4 {
   width: 70vw;
   max-width: 1200px;
- 
+
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
+
   margin: 10px auto 40px;
+}
+.projectenSection {
+  background-image: url("images/Neon Holographic Sci-Fi Gallery-3.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+}
+
+.gift img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-top: 265px;
 }
 
 .socialsSection {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
 }
-
 
 .socialsBackground {
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    object-fit: cover;
-    z-index: -1;
+  object-fit: cover;
+  z-index: -1;
 }
-
 
 .socialsBox {
-    position: absolute;
+  position: absolute;
 
-    top: 35%;
-    left: 0;
+  top: 35%;
+  left: 0;
 
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
 
-    justify-content: space-around;
-    align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
-
-.linkedinBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.linkedinBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .linkedinBox img,
-.githubBox{
-    width: 170px;
-    height: auto;
+.githubBox {
+  width: 170px;
+  height: auto;
 }
-
 
 .githubBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.formulierSection {
+  background-image: url("images/formulier.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  text-align: center;
+  color: white;
+}
+
+.formulierSection h2 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.formulierSection form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  max-width: 100%;
+  padding: 30px;
+  background-color: rgba(10, 10, 30, 0.85);
+  border: 2px solid #7b4dff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #7b4dff;
+}
+
+.formulierSection label {
+  color: white;
+  margin-bottom: 8px;
+  margin-top: 15px;
+}
+
+.formulierSection input,
+.formulierSection textarea {
+  padding: 12px;
+  border: 2px solid #4169ff;
+  border-radius: 8px;
+  background-color: #15152b;
+  color: white;
+  font-size: 16px;
+}
+
+.formulierSection input:focus,
+.formulierSection textarea:focus {
+  outline: none;
+  border-color: #a855f7;
+}
+
+.formulierSection button {
+  margin-top: 25px;
+  padding: 12px;
+  background-color: #7b4dff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.formulierSection button:hover {
+  background-color: #4169ff;
+}

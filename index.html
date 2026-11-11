@@ -26,6 +26,12 @@
         <a class="button" href="#overmij"> ontdek wie ik ben. </a>
       </section>
       <section id="overmij" class="overmijSection">
+          <div class="profiel">
+          <div class="profielBox">
+            <a>
+              <img src="images/foto portfolio.jpg" alt="foto" />
+            </a>
+          </div>
         <article class="wiebenik">
           <h2 class="wbi">Wie ben ik ?</h2>
           <p class="hz">
@@ -115,12 +121,17 @@
         </p>
       </section>
 
-      <section id="projecten" class="projectenSection"></section>
+      <section id="projecten" class="projectenSection">
+
+    <div class="gift">
+        <img src="images/gif projec.gif" alt="Mijn project GIF">
+    </div>
+
+</section>
 
       <section id="socials" class="socialsSection">
         <img src="images/socials.png" class="socialsBackground" alt="" />
-
-        <div class="socialsBox">
+          <div class="socialsBox">
           <div class="linkedinBox">
             <a
               href="https://www.linkedin.com/in/yushika-mahesh-78672831b/"
@@ -128,7 +139,7 @@
               target="_blank"
             >
               <img src="images/linkedin logo.webp" alt="LinkedIn logo" />
-            </a>
+          </a>
           </div>
 
           <div class="githubBox">
@@ -141,6 +152,23 @@
             </a>
           </div>
         </div>
+      </section>
+
+      <section id="formulier" class="formulierSection">
+        <h2>mijn formulier</h2>
+
+        <form>
+          <label for="naam">wat is je naam?</label>
+            <input type="text" id="naam" name="naam" required>
+              
+        <label for="leeftijd">Hoe oud ben je?</label>
+        <input type="number" id="leeftijd" name="leeftijd" min="1" required>
+
+        <label for="mening">Wat vind je van mijn portfolio?</label>
+        <textarea id="mening" name="mening" rows="5" required></textarea>
+
+        <button type="submit">Verzenden</button>
+        </form>
       </section>
     </main>
   </body>
