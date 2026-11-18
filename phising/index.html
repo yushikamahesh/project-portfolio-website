@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login pagina</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="insta logo.png" alt="Mijn logo" class="logo" />
+
+    <div class="login-container">
+      <h1>Welkom terug!</h1>
+      <p>Log in op jouw account</p>
+
+      <form id="loginForm">
+        <label>E-mailadres</label>
+        <input type="email" placeholder="Vul je e-mailadres in" />
+
+        <label>Wachtwoord</label>
+        <input type="password" placeholder="Vul je wachtwoord in" />
+        <button type="submit">Inloggen</button>
+      </form>
+
+      <script>
+        document
+          .getElementById("loginForm")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            alert("Er zijn geen gegevens verzonden,kijk uit voor hackers!");
+          });
+      </script>
+
+      <a href="#">Wachtwoord vergeten?</a>
+    </div>
+  </body>
+</html>
